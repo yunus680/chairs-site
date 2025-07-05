@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Продажа стульев</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn { animation: fadeIn 1s ease-out forwards; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center bg-white px-4">
+    <div class="max-w-3xl animate-fadeIn">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Удобные и стильные стулья для вашего интерьера</h1>
+      <p class="text-lg text-gray-600 mb-8">Выбирайте качество, дизайн и комфорт. Доставка по всей стране.</p>
+      <a href="#products" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg transition">Перейти к товарам</a>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section id="products" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Наши стулья</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Product Card 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden animate-fadeIn">
+          <img src="https://source.unsplash.com/800x600/?chair" alt="Стул 1" class="w-full h-60 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Стул "Скандинавия"</h3>
+            <p class="text-gray-600 mb-4">Легкий деревянный стул с мягким сиденьем. Отлично подходит для кухни или гостиной.</p>
+            <p class="text-lg font-bold mb-4">12 900 ₸</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full">Купить</button>
+          </div>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden animate-fadeIn">
+          <img src="https://source.unsplash.com/800x600/?modern-chair" alt="Стул 2" class="w-full h-60 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Стул "Модерн"</h3>
+            <p class="text-gray-600 mb-4">Современный минималистичный дизайн. Прочный каркас и удобная спинка.</p>
+            <p class="text-lg font-bold mb-4">15 500 ₸</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full">Купить</button>
+          </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden animate-fadeIn">
+          <img src="https://source.unsplash.com/800x600/?vintage-chair" alt="Стул 3" class="w-full h-60 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Стул "Классика"</h3>
+            <p class="text-gray-600 mb-4">Элегантный и надёжный, с винтажными элементами. Идеален для классического интерьера.</p>
+            <p class="text-lg font-bold mb-4">17 800 ₸</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full">Купить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-xl animate-fadeIn">
+      <h2 class="text-2xl font-bold text-center mb-8">Связаться с нами</h2>
+      <form action="https://formspree.io/f/yourformid" method="POST" class="bg-gray-100 p-6 rounded-xl shadow space-y-4">
+        <input type="text" name="name" placeholder="Ваше имя" required class="w-full p-3 rounded-lg border border-gray-300">
+        <input type="email" name="email" placeholder="Email" required class="w-full p-3 rounded-lg border border-gray-300">
+        <textarea name="message" rows="4" placeholder="Сообщение" class="w-full p-3 rounded-lg border border-gray-300"></textarea>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-full">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-800 text-center text-gray-300 text-sm">
+    © 2025. Продажа стульев. Все права защищены.
+  </footer>
+</body>
+</html>
